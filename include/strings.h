@@ -323,7 +323,7 @@ extern const u8 gText_FemaleSymbol[];
 extern const u8 gText_SelectorArrow3[];
 extern const u8 gText_YesNo[];
 
-// main menu/birch speech text
+// main menu/Receptionist speech text
 extern const u8 gText_SaveFileErased[];
 extern const u8 gText_SaveFileCorrupted[];
 extern const u8 gJPText_No1MSubCircuit[];
@@ -338,8 +338,8 @@ extern const u8 gText_WirelessNotConnected[];
 extern const u8 gText_MysteryGiftCantUse[];
 extern const u8 gText_MysteryEventsCantUse[];
 extern const u8 gText_Birch_Welcome[];
-extern const u8 gText_ThisIsAPokemon[];
-extern const u8 gText_Birch_MainSpeech[];
+//extern const u8 gText_ThisIsAPokemon[];
+//extern const u8 gText_Birch_MainSpeech[];
 extern const u8 gText_Birch_AndYouAre[];
 extern const u8 gText_Birch_BoyOrGirl[];
 extern const u8 gText_Birch_WhatsYourName[];
