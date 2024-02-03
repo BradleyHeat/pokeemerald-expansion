@@ -8849,10 +8849,6 @@
           }
         },
         {
-          "map": "MAP_PACIFIDLOG_TOWN",
-          "base_label": "gPacifidlogTown"
-        },
-        {
           "map": "MAP_EVER_GRANDE_CITY",
           "base_label": "gEverGrandeCity",
           "water_mons": {

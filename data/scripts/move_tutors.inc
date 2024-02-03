@@ -232,21 +232,6 @@ MoveTutor_EventScript_DoubleEdgeTaught::
 	release
 	end
 
-PacifidlogTown_PokemonCenter_1F_EventScript_ExplosionTutor::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION, MoveTutor_EventScript_ExplosionTaught
-	msgbox MoveTutor_Text_ExplosionTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_ExplosionDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_ExplosionDeclined
-	msgbox MoveTutor_Text_ExplosionWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_EXPLOSION
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_ExplosionDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION
-	goto MoveTutor_EventScript_ExplosionTaught
-	end
 
 MoveTutor_EventScript_ExplosionDeclined::
 	msgbox MoveTutor_Text_ExplosionDeclined, MSGBOX_DEFAULT
